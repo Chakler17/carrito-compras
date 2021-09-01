@@ -65,7 +65,7 @@ ul {
     top: -5px;
     right: 5px;
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 
 .submenu #carrito{

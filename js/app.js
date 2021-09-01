@@ -7,10 +7,11 @@ const carritoCount = document.getElementById("carrito-count");
 let articulosCarrito = [];
 
 function actualizarContador() {
-    if (articulosCarrito.length === 0) {
-      carritoCount.style.display = "none";
-    } else {
+    if (articulosCarrito.length > 0) {
+      carritoCount.style.display = "block";
       carritoCount.innerText = articulosCarrito.length;
+    } else {
+      carritoCount.style.display = "none";
     }
   }
 
@@ -126,8 +127,3 @@ function limpiarHTML() {
     contenedorCarrito.removeChild(contenedorCarrito.firstChild);
   }
 }
-
-// Contador articulos de carrito
-
-
-console.log(articulosCarrito.length);
